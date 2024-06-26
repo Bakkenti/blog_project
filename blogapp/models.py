@@ -8,12 +8,16 @@ def validate_word_count(value):
         raise ValidationError('Maximum 20 words allowed.')
 
 class BlogPost(models.Model):
+<<<<<<< HEAD
     CATEGORY_CHOICES = [
         ('it & startups', 'IT & Startups'),
         ('finance', 'Finance'),
     ]
     id = models.AutoField(primary_key=True)
     category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
+=======
+    id = models.AutoField(primary_key=True)
+>>>>>>> 0d8e3ba2b3687abcdae31d00e282f9998a43988f
     title = models.CharField(max_length=200)
     content = CKEditor5Field()
     short_description = models.TextField(validators=[validate_word_count])

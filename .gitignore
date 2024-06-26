@@ -1,5 +1,12 @@
 .venv
+<<<<<<< HEAD
 venv
 .env
 static
 staticfiles
+=======
+.env
+static
+staticfiles
+Procfile
+>>>>>>> 0d8e3ba2b3687abcdae31d00e282f9998a43988f
