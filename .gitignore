@@ -1,0 +1,6 @@
+.venv
+venv
+.env
+Procfile
+static
+staticfiles
