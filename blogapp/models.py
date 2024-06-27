@@ -12,6 +12,7 @@ class BlogPost(models.Model):
         ('IT & Startups', 'IT & Startups'),
         ('Finance', 'Finance')
     ]
+    id = models.AutoField(primary_key=True)
     category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
     title = models.CharField(max_length=200)
     content = CKEditor5Field()
