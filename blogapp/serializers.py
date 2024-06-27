@@ -1,4 +1,4 @@
-from rest_framework import serializers
+from django_rest_framework import serializers
 from .models import BlogPost
 
 class PostSerializer(serializers.ModelSerializer):
